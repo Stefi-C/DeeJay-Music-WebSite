@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeeJay-WebSite</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/36ca5abeae.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/wavesurfer.js@7"></script>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /> 
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="stylesheet" href="style.css">
+
+
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#demodrop">DemoDrop</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#tracks">Tracks</a></li>
+            <li><a href="#banner"><i class="fa-solid fa-house" style="color: #c6d12e;"></i></a></li>
+            <li><a href="#tubefeed">TubeFeed</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">ContactMe</a></li>
+        </ul>
+    </nav>
+    <section id="banner">
+        
+        <h1>DeeJay NeNe</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fuga blanditiis repellat necessitatibus pariatur sint, perspiciatis vitae dicta autem corporis fugit iste aliquid quos dolor, dolore excepturi, inventore nulla perferendis.</p>
+        <h2>Feel It</h2>
+       <button class="scroll-down-btn">
+        <a href="#demodrop"><i class="fa-solid fa-angles-down" style="color: #c6d12e;"></i></a>
+       </button>
+       
+        
+        
+    </section>
+    <section id="demodrop">
+        <div class="main-demodrop">
+            <h2 class="title">Feel The Hit</h2>
+            <h3 class="subtitle">DemoDrop</h3>
+
+            <div class="drop-music1">
+                <p>Artist: AryBeatz ft MC Acondize</p>
+                <h1>Filha Dnha Vizinh</h1>
+                <div class="track">
+                    <img id="play-btn1" src="/images/play.svg" alt="">
+                    <div id="wave1" class="audio">
+                        <!-- the waveform will be rendered here -->
+                    </div>   
+                </div>   
+            </div>
+            <img src="/images/earphones.png" class="earphone-png-img">
+           <!---<a href='https://pngtree.com/freepng/dj-headphone-clipart-vector_11052407.html'>png image from pngtree.com/</a>-->
+            
+           <div class="drop-music2">
+            <p>Artist: Helio Batalha ft Sonia Sousa</p>
+            <h1>Dexam Bua</h1>
+            <div class="track">
+                <img id="play-btn2" src="/images/play.svg" alt="">
+                <div id="wave2" class="audio">
+                   <!-- the waveform will be rendered here -->
+                </div>   
+            </div> 
+           </div>
+          
+            
+          
+
+        </div>
+
+        <img src="/images/—Pngtree—dj silhouette fashion music man_5758033.png"  class="main-img">
+        
+        
+    </section>
+    <section id="events">
+        <div class="main-events">
+            <h2 class="title">Watch Me</h2>
+            <h3 class="subtitle">UpComing Events</h3>
+            <div class="events-container">
+                <div class="card">
+                    <img src="/images/event1.avif" alt="">
+                    <div class="intro">
+                        <h1>Evento 1</h1>
+                        <p>In <span>This Place:</span> Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Debitis dolores </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/event2.avif" alt="">
+                    <div class="intro">
+                        <h1>Evento 2</h1>
+                        <p>In <span>This Place:</span> Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Debitis dolores</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/event3.jpeg" alt="">
+                    <div class="intro">
+                        <h1>Evento 3</h1>
+                        <p>In <span>This Place:</span> Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Debitis dolores</p>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+
+
+    </section>
+    <section id="tracks">
+        <img src="/images//imgbin_wall-decal-disc-jockey-sticker-music-png.png"  class="main-img">
+      
+        <div class="main-tracks">
+            <h2 class="title">Listen This Hit</h2>
+            <h3 class="subtitle">My Remixes</h3>
+
+            <div class="music-section">
+                <div class="hero-img">
+                    </div>
+         <button class="fa-solid fa-play play-music-btn" id="play-btn" style="color: antiquewhite; cursor: pointer;"></button>
+               
+                <div class="emblem-container">
+                    <div class="emblem text-track"></div>
+                </div>
+                <h1 class="text-track" value="4">
+                    <span class="album-num"></span>
+                    <span class="album-title"></span><span>Song Title</span>
+                </h1>
+            </div>
+            <div class="button-container">
+                <div id="close-player" class="fa-solid fa-music close-m-btn"></div>
+                <div class="m-player">
+                    <div class="mp-nav">
+                        <div class="mp-title">
+                            <i class="fa-solid fa-angle-right m-name" style="color: antiquewhite;">song title</i>
+                            <p class="m-artist">Artist</p>
+                        </div>
+                        <div class="mp-bars">
+                            <i class="fa-solid fa-angle-down"  id="music-list" style="color: antiquewhite; cursor: pointer;"> MusicList</i>  
+                           
+                        </div>
+                    </div>
+                    <audio id="mp-song" src=""></audio>
+                    <div class="progress-area">
+                        <input type="range"  value="" id="progress">
+                        
+                    </div>
+                    
+                    <div class="mp-controls">
+                        <button class="scroll-left nav-arrow"><span></span>Prev</button>
+                        <div class="spotify-widget" >
+                            <div class='btn-cont'>
+                                <a class='play-btn'>
+                                     <i class="fa-solid fa-play play-music-btn" id="ctrlIcon"  style="color: antiquewhite;">Play</i>
+                                    <span class='line-1'></span>
+                                    <span class='line-2'></span>
+                                    <span class='line-3'></span>
+                                    <span class='line-4'></span>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="scroll-right nav-arrow">Next<span></span></button>
+                   
+                    </div>
+                </div>
+                <div class="music-list">
+                    <div class="header">
+                      <div class="row">
+                      </div>
+                     
+                    </div>
+                    <ul id="ul-tag">
+                      <!-- here li list are coming from js -->
+                      <div>
+                        <ul id="root">
+        
+                        </ul>
+                      </div>
+                    </ul>
+                </div>
+                
+            </div>
+            
+
+            
+             <!--
+   
+                <div class="box-container">
+                    <div class="in-box-container">
+                        <div class="box" data-src="songs/music-1.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-1.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>NEFFEX cold</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-2.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-2.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>rize up</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-3.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-3.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>arround the world</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-4.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-4.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>THNK U jay someday</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-5.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-5.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>NEFFEX life</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-6.mp3">
+                            <div class="image">
+                                <div class="play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-6.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>fun house</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                        <div class="box" data-src="songs/music-1.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-1.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>NEFFEX cold</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-2.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-2.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>rize up</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-3.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-3.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>arround the world</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-4.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-4.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>THNK U jay someday</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-5.mp3">
+                            <div class="image">
+                                <div class="play">
+                                   <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-5.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>NEFFEX life</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                        <div class="box" data-src="songs/music-6.mp3">
+                            <div class="image">
+                                <div class="play">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                                <img src="images/album-6.png" alt="">
+                            </div>
+                            <div class="box-content">
+                                <h3>fun house</h3>
+                                <p>Artist named on remix</p>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            
+            
+            
+            <div class="music-player">
+                <div id="close-player" class="fa-solid fa-caret-right close-m-btn"></div>
+                <h3 class="music-title"></h3>
+                <audio src="" controls>
+
+                </audio>
+            </div>
+           
+          
+           
+        </div>-->
+    </section>
+    <section id="tubefeed">
+        <div class="main-tubefeed">
+            <h2 class="title">Watch it</h2>
+            <h3 class="subtitle">Videos On Tube</h3>
+
+
+            <div class="tube-content">
+                <div class="main-video">
+                    <video src="/videos/video3 (2160p).mp4" controls autoplay muted></video>
+                    <h3 class="video-title">Manipulate text background</h3>
+                </div>
+        
+                <div class="video-playlist">
+                
+                    <div class="videos">
+                        <!--here are the video list-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="/images/imgbin_wall-decal-headphones-art-sticker-png.png"  class="main-img">
+       
+    </section>
+    <section id="services">
+        <div class="main-services">
+            <h2 class="title">Contract Me</h2>
+            <h3 class="subtitle">My Services</h3>
+            
+        <div class="services-content">
+            <div class="contact-form">
+                <div class="form">
+                    <form action="mail.php" method="post">
+
+                         <h2>Contact For Booking Here</h2>
+                        <input class="form-label" type="text" id="fname" name="name" placeholder="Your Name" required>
+
+
+                        <input class="form-label"  type="email" id="email" name="email" placeholder="Your Email" required>
+
+                        
+                        <input class="form-label"  type="text" id="" name="subject" placeholder="Subject" required>
+
+                        
+                        <textarea name="message" id="message" placeholder="Your Request..."></textarea>
+
+                        <input class="submit" type="submit" name="send" value="Submit" required>
+                    </form>
+                </div>
+            </div>
+            <div class="services">
+                <div class="service-box">
+                    
+                    <h2><i class="fa-solid fa-wine-glass"></i> Clubs & Bar</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Dolorum eum sint voluptas nisi perferendis enim nulla illo soluta repudiandae,
+                          aperiam earum error ad quos veritatis nihil maiores a temporibus sapiente.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h2><i class="fa-solid fa-heart"></i> Weddings</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Dolorum eum sint voluptas nisi perferendis enim nulla illo soluta repudiandae,
+                          aperiam earum error ad quos veritatis nihil maiores a temporibus sapiente.
+                    </p>
+                </div>
+                <div class="service-box">
+                    
+                    <h2><i class="fa-solid fa-champagne-glasses"></i> Corporate Events</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Dolorum eum sint voluptas nisi perferendis enim nulla illo soluta repudiandae,
+                          aperiam earum error ad quos veritatis nihil maiores a temporibus sapiente.
+                    </p>
+                </div>
+                <div class="service-box">
+                    <h2><i class="fa-solid fa-wand-magic-sparkles"></i> Private Party</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                         Dolorum eum sint voluptas nisi perferendis enim nulla illo soluta repudiandae,
+                          aperiam earum error ad quos veritatis nihil maiores a temporibus sapiente.
+                    </p>
+                </div>
+            </div>
+        </div>
+       
+        </div>
+
+
+
+        
+    </section>
+    <section id="contact">
+        <img src="/images/imgbin_disc-jockey-dj-mixer-phonograph-record-png.png"  class="main-img">
+       
+        <div class="main-contact">
+            <h2 class="title">Contact Me</h2>
+            <h3 class="subtitle">Keep In Touch</h3>
+        
+            <ul>
+                <li>
+                    <h2>Contact</h2>
+                    <div class="about">
+                        <span class="material-symbols-outlined"> location_on
+                            </span>
+                        <p>Fake St. 203 <br>Berlin, BE <br>100887 Deutschland</p>
+                    </div>
+                    <div class="about">
+                        <span class="material-symbols-outlined"> call
+                        </span>
+                        <p>+49 0123 456 789</p>
+                    </div>
+                    <div class="about">
+                        <span class="material-symbols-outlined"> mail
+                        </span>
+                        <p>Mail@Yourmail.com</p>
+                    </div>
+                </li>
+                <li>
+                    <h2>Latest News</h2>
+                    <div class="about">
+                        <img src="/images/album-1.png" style="margin:15px;border-radius: 5px;">
+                        <div>
+                            <p>Some Event or <br>Big Notice About</p>
+                            <p class="min">Apr. 2 2024 Admin 5</p>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <img src="/images/album-2.png" style="margin:15px;border-radius: 5px;">
+                        <div>
+                            <p>Some Event or <br>Big Notice About</p>
+                            <p class="min">Apr. 7 2024 Admin 5</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="f-li-social">
+                    <div class="li-social-1">
+                         <h2>Social Media</h2>
+                    <div class="about">
+                          <img class="icon" src="/icon/001-facebook.png" alt="">
+                          <a href="#" target="_blank">Facebook</a>
+                    </div>
+                    <div class="about">
+                        <img class="icon" src="/icon/002-tik-tok.png" alt="">
+                        <a href="#" target="_blank">Tik Tok</a>
+                    </div>
+                    <div class="about">
+                        <img class="icon" src="/icon/003-instagram.png"alt="">
+                        <a href="#" target="_blank">Instagram</a>
+                    </div>
+                    </div>
+                <li class="social-2">
+                         <h2>Play My Music</h2>
+                    <div class="about">
+                        <img class="icon" src="/icon/004-spotify.png" alt="">
+                        <a href="#" target="_blank">Spotify</a>
+                    </div>
+                    <div class="about">
+                        <img class="icon" src="/icon/005-play.png"alt="">
+                        <a href="#" target="_blank">You Tube</a>
+                    </div>
+                    <div class="about">
+                        <img class="icon" src="/icon/006-music.png" alt="">
+                        <a href="#" target="_blank">Apple Music</a>
+                    </div>
+                    </li>
+                <li>
+                    <h2>Collaboration</h2>
+                    <div class="about">
+                       <span class="material-symbols-outlined"> apartment
+                       </span>
+                       <p>This Place.Gmbh <br><a href="#">www.thisPlace.com</a></p> 
+                    </div>
+                    <div class="about">
+                        <span class="material-symbols-outlined">source_environment
+                            </span>
+                        <p>This Production.Gmbh <br><a href="#">www.thisPoduction.com</a></p> 
+                     </div>
+                     <div class="about">
+                        <span class="material-symbols-outlined">contacts_product
+                            </span>
+                        <p>This Person.Gmbh <br><a href="#">www.thisPerson.com</a></p> 
+                     </div>
+                </li>
+            </ul>
+    
+            
+    
+           
+            
+           
+        </div>
+        
+       <div class="copy-right">
+                <p>Copyright <span class="material-symbols-outlined">copyright</span>2024 All rights reserved</p>
+                <p>This template is made with <span class="material-symbols-outlined">favorite</span> by Stefi C.</p>
+            </div>
+       
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/script.js"></script>
+ <script type="module" src="waveSurfer.js" ></script>    
+</body>
+</html>
