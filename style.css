@@ -1728,6 +1728,7 @@ input:active{
 .main-contact ul{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     padding: 10px;
     text-align: right;
     list-style: none;
@@ -1797,4 +1798,50 @@ input:active{
 }
 .copy-right span{
     font-size: 12px;
+}
+.menu{
+    display: none;
+}
+
+
+/*Responsive style*/
+@media (max-width: 991px){
+    body{
+        border: 5px solid red;
+    }
+    nav{
+        height: 100%;
+        width: 50%;
+        background-color: #0d0915;
+        display: none;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+    nav ul li{
+        margin: 10px;
+    }
+    .menu{
+        display: block;
+    }
+    .services{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1, 300px);
+        grid-template-rows: repeat(4, 150px);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        border-radius: 0px 10px 10px 0px;
+        background: var(--lightviolet);
+        color: var(--clear);
+    }
+    .main-contact ul{
+        padding-top: 200px;
+    }
+    .services-content{
+        padding-top: 150px;
+        height: auto;
+        border: 2px solid green;
+    }
 }
