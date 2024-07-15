@@ -1672,6 +1672,7 @@ input:active{
     color: var(--clear); 
     font-family: var(--merrifsansserif);
     position: relative;
+    height: 100vh;
 }
 #contact .main-img{
     width: 50%;
@@ -1700,6 +1701,7 @@ input:active{
     text-shadow: var(--text-shadow);
     cursor: default;
     z-index: 3;
+  
 }
 .main-contact .subtitle{
    color: var(--dark);
@@ -1714,12 +1716,13 @@ input:active{
 {
     background: linear-gradient(195deg, rgb(215, 234, 14) 0%, rgba(2,15,85,1) 50%, rgba(198,36,143,1) 100%);
     padding: 20px;
-    height: 98vh;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .main-contact h2{
     text-align: left;
@@ -1732,7 +1735,8 @@ input:active{
     padding: 10px;
     text-align: right;
     list-style: none;
-    
+     height: auto;
+    margin-top: 290px;
 
 }
 .main-contact ul li{
@@ -1740,6 +1744,7 @@ input:active{
     padding: 20px;
     height: 300px;
     z-index: 4;
+    border: 2px solid plum;
 }
 .about{
     display: flex;
@@ -1786,6 +1791,7 @@ input:active{
 }
 .copy-right{
     color: var(--dark);
+    background-color: var(--color-light);
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -1804,44 +1810,4 @@ input:active{
 }
 
 
-/*Responsive style*/
-@media (max-width: 991px){
-    body{
-        border: 5px solid red;
-    }
-    nav{
-        height: 100%;
-        width: 50%;
-        background-color: #0d0915;
-        display: none;
-    }
-    nav ul{
-        flex-direction: column;
-        margin-top: 80px;
-    }
-    nav ul li{
-        margin: 10px;
-    }
-    .menu{
-        display: block;
-    }
-    .services{
-        display: grid;
-        flex-wrap: wrap;
-        grid-template-columns: repeat(1, 300px);
-        grid-template-rows: repeat(4, 150px);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-        border-radius: 0px 10px 10px 0px;
-        background: var(--lightviolet);
-        color: var(--clear);
-    }
-    .main-contact ul{
-        padding-top: 200px;
-    }
-    .services-content{
-        padding-top: 150px;
-        height: auto;
-        border: 2px solid green;
-    }
-}
+

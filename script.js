@@ -109,6 +109,7 @@ closePlayer.addEventListener('click', function(){
     closePlayer.classList.toggle('fa-caret-down');
     closePlayer.classList.toggle('fa-music');
 })
+/*
 //mp-player
 const closeMusicList = document.getElementById('music-list');
 const musicPlayerList = document.querySelector('.music-list');
@@ -389,7 +390,7 @@ const createEmblem = (string, delimiter = "•") => {
 
 updateDisplay(index);
 
-
+*/
 
 
 /*--------------------------tubfeed*/
@@ -482,3 +483,18 @@ videos.forEach(selected_video => {
         main_video_title.innerHTML = match_video.title;
     }
 });
+
+//menu btn
+const menu = document.getElementById("menu");
+const nav = document.querySelector("nav");
+const barsBtn = document.getElementById("bars-btn");
+menu.addEventListener("click", function(){
+   if(nav.style.display == "none"){
+    nav.style.display = "block";
+    barsBtn.innerText = "Close"
+   
+   }else{ 
+    nav.style.display = "none";
+    barsBtn.innerText = "Menu"
+   }
+})
