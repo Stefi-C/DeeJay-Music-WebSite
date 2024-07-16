@@ -1347,6 +1347,7 @@ nav ul li a:hover{
     right: 0;
     top: 35%;
     opacity: 0.4;
+    
 }
 @media screen and(max-width: 990px){
     .main-tubefeed{
@@ -1744,7 +1745,6 @@ input:active{
     padding: 20px;
     height: 300px;
     z-index: 4;
-    border: 2px solid plum;
 }
 .about{
     display: flex;

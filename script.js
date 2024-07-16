@@ -1,32 +1,3 @@
-/*
-let closePlayer = document.querySelector('#close-player');
-let buttonContainer = document.querySelector('.button-container');
-let boxContainer = document.querySelector('.box-container');
-
-closePlayer.onclick = () =>{
-    closePlayer.classList.toggle('close-m-btn');
-    buttonContainer.classList.toggle('active');
-    boxContainer.classList.toggle('active');
-   
-}
-
-let boxes = document.querySelectorAll('.box');
-
-boxes.forEach(box =>{
-
-    box.onclick = () =>{
-        let src = box.getAttribute('data-src');
-        let text = box.querySelector('.box-content h3').innerText;
-        musicPlayer.classList.add('active');
-        boxContainer.classList.add('active');
-        closePlayer.classList.add('fa-caret-down');
-        musicPlayer.querySelector('h3').innerText = text;
-        musicPlayer.querySelector('audio').src = src;
-        musicPlayer.querySelector('audio').play();
-    }
-
-});
-*/
 
 const wrapper = document.querySelector(".button-container"),
 musicName = wrapper.querySelector(".m-name"),
@@ -110,7 +81,7 @@ closePlayer.addEventListener('click', function(){
     closePlayer.classList.toggle('fa-music');
 })
 /*
-//mp-player
+//mp-player*/
 const closeMusicList = document.getElementById('music-list');
 const musicPlayerList = document.querySelector('.music-list');
 closeMusicList.onclick = () =>{
@@ -141,23 +112,20 @@ function loadMusic(indexNumb){
   
   //play music function
   function playMusic(){
-    playPauseBtn.addEventListener('click', function(){
-        playIcon.classList.add('fa-pause');
-        playIcon.classList.remove('fa-play');
-        playIcon.innerText = 'Pause'
-    mainAudio.play();
-    })
-    
+   playIcon.classList.add('fa-pause');
+   playIcon.classList.remove('fa-play');
+   playIcon.innerText = 'Pause';
+   mainAudio.play();
+   wrapper.classList.add("paused");
   }
   
   //pause music function
   function pauseMusic(){
-    playPauseBtn.addEventListener('click', function(){
-        playIcon.classList.add('fa-play');
-        playIcon.classList.remove('fa-pase');
-        playIcon.innerText = 'Play'
-    mainAudio.pause();
-  })
+    playIcon.classList.add('fa-play');
+   playIcon.classList.remove('fa-pause');
+   playIcon.innerText = 'Play';
+   mainAudio.pause();
+   wrapper.classList.remove("paused");
   }
   
   //prev music function
@@ -390,7 +358,7 @@ const createEmblem = (string, delimiter = "•") => {
 
 updateDisplay(index);
 
-*/
+
 
 
 /*--------------------------tubfeed*/

@@ -8,6 +8,8 @@
         display: none;
     }
     nav ul{
+        position: fixed;
+        width: 100%;
         flex-direction: column;
         height: 100vh;
         background-color: rgba(112, 128, 144, 0.829);/*cambia colore*/
@@ -18,7 +20,7 @@
         margin: 5px;
     }
     .bars{
-        position: absolute;
+        position: fixed;
         border: 2px solid white;
         top:5px;
         right: 5px;
